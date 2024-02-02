@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Municipios y Veredas</title>
+</head>
+
+<body>
+
+    <h1>Municipios y Veredas/Localidades</h1>
+
+    <label for="municipios">Selecciona un municipio:</label>
+    <select id="municipios" onchange="cargarVeredas()">
+        <option value="">-- Selecciona --</option>
+        <!-- Agrega más municipios según sea necesario -->
+        <option value="BOGOTÁ">BOGOTÁ</option>
+        <option value="BOJACÁ">BOJACÁ</option>
+        <option value="CAJICA">CAJICA</option>
+        <option value="CHIA">CHIA</option>
+        <option value="CHIPAQUE">CHIPAQUE</option>
+        <option value="CHOACHÍ">CHOACHÍ</option>
+        <option value="COGUA">COGUA</option>
+        <option value="COTA">COTA</option>
+        <option value="EL ROSAL">EL ROSAL</option>
+        <option value="FACATATIVÁ">FACATATIVÁ</option>
+        <option value="FUNZA">FUNZA</option>
+        <option value="FUSAGASUGÁ">FUSAGASUGÁ</option>
+        <option value="GACHANCIPÁ">GACHANCIPÁ</option>
+        <option value="GRANADA">GRANADA</option>
+        <option value="GUASCA">GUASCA</option>
+        <option value="LA CALERA">LA CALERA</option>
+        <option value="MADRID">MADRID</option>
+        <option value="MOSQUERA">MOSQUERA</option>
+        <option value="PACHO">PACHO</option>
+        <option value="PASCA">PASCA</option>
+        <option value="SAN ANTONIO DEL TEQUENDAMA">SAN ANTONIO DEL TEQUENDAMA</option>
+        <option value="SIBATÉ">SIBATÉ</option>
+        <option value="SILVANIA">SILVANIA</option>
+        <option value="SOACHA">SOACHA</option>
+        <option value="SOPO">SOPO</option>
+        <option value="SUBACHOQUE">SUBACHOQUE</option>
+        <option value="SUMAPAZ">SUMAPAZ</option>
+        <option value="TABIO">TABIO</option>
+        <option value="TENJO">TENJO</option>
+        <option value="TOCANCIPÁ">TOCANCIPÁ</option>
+        <option value="ZIPAQUIRÁ">ZIPAQUIRÁ</option>
+    </select>
+
+    <label for="veredas">Selecciona una vereda o localidad:</label>
+    <select id="veredas" onchange="cargarTipoTerritorio()">
+        <!-- Las opciones de veredas se cargarán dinámicamente mediante JavaScript -->
+    </select>
+
+    <label for="tipoTerritorio">Tipo Territorio:</label>
+    <span id="tipoTerritorio"></span>
+
+    <!-- Tabla de actividades para el tipo de territorio URBANO -->
+    <table id="actividadesUrbanas" style="display: none;">
+        <thead>
+            <tr>
+                <th>BAREMO</th>
+                <th>TIPO TERRITORIO</th>
+                <th>Actividad</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- El cuerpo de la tabla estará vacío inicialmente -->
+        </tbody>
+    </table>
+    
+
+    <script src="valida.js"></script>
+</body>
+
+</html>
